@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Analytics tools test page</title>
-  <script src="//cdn.optimizely.com/js/2424810021.js"></script>
+
+ga('create', 'UA-52037596-2', 'auto'); // stage
+ga('send', 'pageview');
+
+ga('create', 'UA-52037596-3', 'auto', {'name': 'newTracker'});  // QA
+ga('send', 'pageview', {name: newTracker);
+
 </head>
 
 <body>
